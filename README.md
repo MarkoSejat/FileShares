@@ -15,8 +15,9 @@ This tutorial outlines File Shares and how they work. We will create and test fi
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
-
+- Windows 10</b> 
+- Windows Server 
+ 
 <h2>List of Prerequisites</h2>
 This is a continuation of the previous tutorial. You must have completed the previous tutorials in order to proceed with this one. 
 
