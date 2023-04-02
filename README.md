@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/SxDwnok.jpg" alt="osTicket logo"/>
 </p>
 
-<h1>osUnderstanding File Shares</h1>
+<h1>Understanding File Shares</h1>
 This tutorial outlines File Shares and how they work. We will create and test file shares and also, talk about security groups. We will also create and test Security groups as well. <br />
 
 
