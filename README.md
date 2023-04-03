@@ -24,7 +24,7 @@ This is a continuation of the previous tutorial. You must have completed the pre
 <h2>What Is It?</h2>
 
 <p>
-<img src="https://i.imgur.com/gOLDKmU.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/mnez83t.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 File sharing is the public or private sharing of files or folders on a computer connected to a network.
