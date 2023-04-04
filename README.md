@@ -46,8 +46,8 @@ Let us go back into our Active Directory and select a random user that we create
 <img src="https://i.imgur.com/Bnjabwx.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, “accounting”. <br>
-Set the following permissions (share the folder) for the “Domain Users” group:<br>
+On DC-1, on the C:\ drive, create 4 folders: “read-access”, “write-access”, “no-access”, “accounting”. 
+ Set the following permissions (share the folder) for the “Domain Users” group:<br>
 Folder: “read-access”, Group: “Domain Users”, Permission: “Read”<br>
 Folder: “write-access”,  Group: “Domain Users”, Permissions: “Read/Write”<br>
 Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Write”<br>
@@ -62,7 +62,7 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 <img src="https://i.imgur.com/wyYa5uO.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On Client-1, navigate to the shared folder (start, run, \\dc-1). Try to access the folders you just created. Which folders can you access? Which folders can you create stuff in? Does it make sense? 
+On Client-1, navigate to the shared folder (start, run, \\dc-1). Try to access the folders you just created. Which folders can you access? Which folders can you create stuff in? Does it make sense?
  
 
  <h2>Create an “ACCOUNTANTS” Security Group, assign permissions, an test access</h2>
@@ -76,7 +76,7 @@ On Client-1, navigate to the shared folder (start, run, \\dc-1). Try to access t
 <img src="https://i.imgur.com/iLJb9f2.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Go back to DC-1, in Active Directory, create a new Organizational Unit called "_SECURITY_GROUPS". Once we did that, we can right-click +SECURITY_GROUPS, click new, then groups, and create a security called “ACCOUNTANTS”. We wont add anyone to this group yet but we will use it to assign permissions. 
+Go back to DC-1, in Active Directory, and create a new Organizational Unit called "_SECURITY_GROUPS". Once we did that, we can right-click +SECURITY_GROUPS, click new, then groups, and create a security called “ACCOUNTANTS”. We won't add anyone to this group yet but we will use it to assign permissions. 
 
 </p>
 <br />
@@ -107,9 +107,8 @@ On Client-1, as  <someuser>, try to access the accountants folder. It should fai
 <img src="https://i.imgur.com/q6dn026.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On DC-1, make <someuser> (in my case it was "bas.pag") a member of the “ACCOUNTANTS”  Security Group. To do this just click on the ACCOUNTANTS security group we created in AD and then click members and then add. From there you can add the user you were trying to access the accountants file with before.<br>
-Restart the Client-1 VM, Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\ - Does it work now?
-
+On DC-1, make (in my case it was "bas.pag") a member of the “ACCOUNTANTS” Security Group. To do this just click on the ACCOUNTANTS security group we created in AD and then click members and then add. From there you can add the user you were trying to access the accountants file with before.
+ Restart the Client-1 VM, Sign back into Client-1 and try to access the “accounting” share in \\DC-1\ - Does it work now?
 </p>
 <br />
 
